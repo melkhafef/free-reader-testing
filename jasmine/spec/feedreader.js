@@ -112,7 +112,7 @@ $(function () {
             // take feed element
             const feed = document.querySelector('.feed');
             // check if it have one child at least 
-            expect(feed.children[0].children[0]).toBeDefined();
+            expect(feed.children[0].children[0].classList.contains('entry')).toBe(true);
         })
     });
     /* TODO: Write a new test suite named "New Feed Selection" */
